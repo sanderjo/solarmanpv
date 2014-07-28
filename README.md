@@ -1,4 +1,4 @@
-solarmanpv
+Solarmanpv
 ==========
 
 Tools to read information from www.solarmanpv.com, for example [link](http://www.solarmanpv.com/portal/Terminal/TerminalMain.aspx?pid=6543)
@@ -11,5 +11,10 @@ Installation
 ------------
 
 No installation needed; just run the file from the directory you want
+
+Thank you
+---------
+
+Thank you Petje for finding out the underlying solarmanpv mechanism.
 
 
