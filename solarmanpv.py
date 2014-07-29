@@ -28,7 +28,7 @@ html = opener.open(req).read()
 result = json.loads(html)
 #print result
 pprint(result)
-print result[0][u'nowpower']
-print result[0][u'allpower']
+print "NowPower is", result[0][u'nowpower']
+print "AllPower is", result[0][u'allpower']
 
 
