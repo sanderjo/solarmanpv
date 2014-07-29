@@ -15,6 +15,6 @@ No installation needed; just run the file from the directory you want
 Thank you
 ---------
 
-Thank you Petje [link](https://github.com/petski) for finding out the underlying solarmanpv mechanism.
+Thank you Petje aka Petski [link](https://github.com/petski) for finding out the underlying solarmanpv mechanism.
 
 
