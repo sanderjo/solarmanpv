@@ -4,9 +4,17 @@ from urllib2 import Request, build_opener, HTTPCookieProcessor, HTTPHandler
 import cookielib
 import json
 from pprint import pprint
+import sys
 
-pid = '6067'
+debug = False	# set to True if you want more output
 
+pid = '6666'
+
+if len(sys.argv) < 2:
+	sys.stderr.write('Usage: sys.argv[0] <pid>')
+	print "... I'm assuming pid", pid
+else:
+	pid = sys.argv[1]
 
 #Create a CookieJar object to hold the cookies
 cj = cookielib.CookieJar()
@@ -18,16 +26,20 @@ req = Request('http://www.solarmanpv.com/portal/Terminal/TerminalMain.aspx?pid='
 f = opener.open(req)
 #html = f.read()
 
-#Check out the cookies
-print "the cookies are: "
-for cookie in cj:
-    print cookie
+if debug:
+	#Check out the cookies
+	print "the cookies are: "
+	for cookie in cj:
+	    print cookie
 
 req = Request('http://www.solarmanpv.com/portal/AjaxService.ashx?ac=upTerminalMain&psid=' + pid)
 html = opener.open(req).read()
 result = json.loads(html)
-#print result
-pprint(result)
+
+#print results
+if debug:
+	pprint(result)
+
 print "NowPower is", result[0][u'nowpower']
 print "AllPower is", result[0][u'allpower']
 
