@@ -22,9 +22,11 @@ Shell script:
   
   [{"nowpower":"0.56 kW","daypower":"0.83 kWh","monthpower":"436.90 kWh","yearpower":"2.30 MWh","allpower":"4.54  MWh","lasttime":"Jul.29 10:12,GMT +2,2014","commissioned":"May.21,2013","capacity":"3.75 kW","installer":"Blabla","peakpower":"3.71 kW","efficiency":"2.41 kWh/kW/day","treesplanted":"12.43 <em style='font-size:16px'>trees</em>","co2":"4.54 <em style='font-size:16px'>ton</em>","income":"â¬1.05K"}]
 
-Python script
+Python script 
 
-$ ./solarmanpv.py
+Specify the pid (=id of solar panel) as the first number.
+
+$ ./solarmanpv.py 6030
 
   the cookies are:
   Cookie ASP.NET_SessionId=025q0dvoxudruk45osuxi0uo for www.solarmanpv.com
